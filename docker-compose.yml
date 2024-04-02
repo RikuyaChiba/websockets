@@ -1,0 +1,9 @@
+services:
+  backend:
+    image: node:lts-alpine3.19
+    tty: true
+    volumes:
+      - type: bind
+        source: "./src"
+        target: "/app"
+    working_dir: /app
